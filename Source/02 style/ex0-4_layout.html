@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>페이지 레이아웃 1</title>
+    <style>
+        #container {
+            border: 1px solid red;
+            width: 1200px;
+            height: 850px;
+            margin: 0 auto;
+        }
+        #container > div {
+            border : 1px solid blue;
+        }
+        #header {
+            height: 150px;
+        }
+        #main {
+            height: 550px;
+        }
+        #footer {
+            height: 150px;
+        }
+        #header > div {
+            border: 1px solid greenyellow;
+        }
+        .d1, .d3{
+            width: 20%;
+            height: 150px;
+            float: left;
+        }
+        .d2{
+            width: 59%;
+            height: 150px;
+            float: left;
+        }
+        .clear {
+            clear :both;
+        }
+    </style>
+</head>
+<body>
+    <!-- 전체 페이지 레이아웃 -->
+    <div id = "container">
+        <!-- 헤더 블락 -->
+        <div id = "header">
+            <div class = "d1">RUBATO</div>
+            <div class = "d2">신뢰로 보답하는 루바토손해보험</div>
+            <div class = "d3">로그인|회원 가입|사이트맵|회사 소개</div>
+            <div class="clear"></div>
+        </div>
+        <!-- 메인 블락 -->
+        <div id = "main"></div>
+        <!-- 푸더 블락-->
+        <div id = "footer"></div>
+
+
+    </div>
+    
+</body>
+</html>

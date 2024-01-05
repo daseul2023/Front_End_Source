@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시멘트릭 태그 - HTML5 레이아웃 잡는 태그</title>
+    <style>
+        #container {
+            border: 1px solid red;
+            width: 85%;
+            height: 900px;
+            margin: 0 auto;
+        }
+        header{
+            border: 1px solid red;
+            height: 100px;
+        }
+        footer{
+            border: 1px solid red;
+            height: 100px;
+        }
+        main{
+            border: 1px solid red;
+            height: 700px; 
+        }
+        #t1 tr td{
+            border: 1px solid blue;
+            height: 94px;
+        }
+        aside {
+            border: 1px solid rgb(223, 252, 115);
+            width: 20%;
+            height: 699px; 
+            float: left;
+        }
+        main{
+            border: 1px solid rgb(29, 243, 96);
+            width: 80%;
+            height: 699px; 
+            background-color: rgb(255, 255, 243);
+            
+            margin-left: 20%;
+            
+        }
+        .clear{
+            clear : both;
+        }
+        .c1{
+            border: 1px solid rgb(106, 229, 248);
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- 전체 레이아웃 -->
+    <div id ="container">
+        <header>
+            <table id = "t1">
+                <tr>
+                    <td width = "300px"><img src ="img/logo.gif" alt = "헤드이미지"></td>
+                    <td width = "1100px"><img src ="img/moto.gif"></td>
+                    <td width = "400px">로그인|회원 가입|사이트맵|회사 소개</td>
+                </tr>
+            </table>
+        </header>
+        <aside class ="c1"><img src ="img/menu01.gif">
+            <img src ="img/menu02.gif">
+            <img src ="img/menu03.gif">
+            <img src ="img/menu04.gif">
+            <img src ="img/menu05.gif">
+        </aside>
+        <div class="clear"></div>
+        <main class = "c1">main</main>
+        <!-- clear -->
+        <div class="clear"></div>
+        <footer></footer>
+        <img src = "address.gif">
+    </div>
+</body>
+</html>
